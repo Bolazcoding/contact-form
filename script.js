@@ -65,7 +65,7 @@ submitBtn.addEventListener("click", function (e) {
   if (!emailRegex.test(emailValue)) {
     email_error.textContent = " Please enter a valid email address";
     email.style.borderColor = "hsl(0, 66%, 54%)";
-    email.style.color = "hsl(0, 66%, 54%)";
+    email.style.color = "hsl(187, 24%, 22%)";
   }
 
   if (!queryValue) {
