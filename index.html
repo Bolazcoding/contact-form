@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="./script.js"></script>
+    <title>Frontend Mentor | Contact form</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <h1 class="header">Contact Us</h1>
+        <form name="myForm" action="#">
+          <div class="names">
+            <div class="address">
+              <label for="firstName">First Name <span>*</span></label>
+              <input
+                type="text"
+                class="input ids input-field"
+                id="fname"
+                name="name"
+                autocomplete="name"
+                required
+              />
+              <p class="field-error-message error-msg">
+                This field is required
+              </p>
+            </div>
+
+            <div class="address">
+              <label for="lastName">Last Name <span>*</span></label>
+              <input
+                type="text"
+                class="input ids input-field"
+                id="lname"
+                name="name"
+                autocomplete="name"
+                required
+              />
+              <p class="field-error-message error-msg">
+                This field is required
+              </p>
+            </div>
+          </div>
+
+          <div class="address email">
+            <label for="firstName">Email Address <span>*</span></label>
+            <input
+              type="email"
+              class="input input-field"
+              name="email"
+              id="email"
+              required
+            />
+            <p class="field-error-message error-msg email-error">
+              Please enter a valid email address
+            </p>
+          </div>
+
+          <div class="address">
+            <label for="query">Query Type <span>*</span></label>
+
+            <div class="queries">
+              <fieldset class="type">
+                <input
+                  class="query-radio"
+                  type="radio"
+                  id="query"
+                  name="query"
+                  value="General Enquiry"
+                  required
+                />
+                <label class="label-checkbox" for="general"
+                  >General Enquiry</label
+                >
+              </fieldset>
+
+              <fieldset class="type">
+                <input
+                  class="query-radio"
+                  type="radio"
+                  id="query"
+                  name="query"
+                  value="Support Request"
+                  required
+                />
+                <label class="label-checkbox" for="support"
+                  >Support Request</label
+                >
+              </fieldset>
+            </div>
+            <p id="dispQueryError" class="field-error-message"></p>
+          </div>
+
+          <div class="address">
+            <label for="message">Message <span>*</span></label>
+            <input
+              type="text"
+              class="input message-input input-field"
+              id="message"
+              name="name"
+              autocomplete="name"
+              required
+            />
+            <p class="field-error-message error-msg">This field is required</p>
+          </div>
+
+          <div class="checkbox-address">
+            <input
+              class="terms-checkbox"
+              type="checkbox"
+              id="terms"
+              name="color"
+              value="Agree to terms and conditions"
+            />
+            <label class="terms" for="checkbox"
+              >I consent to being contacted by the team <span>*</span>
+            </label>
+          </div>
+          <p id="dispTermError" class="field-error-message"></p>
+
+          <input class="btn" type="submit" value="Submit" />
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

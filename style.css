@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Green-200-lighter: hsl(148, 38%, 91%);
+  --Green-600-medium: hsl(169, 82%, 27%);
+  --Green-600-darker: hsl(169, 84%, 12%);
+  --Red: hsl(0, 66%, 54%);
+
+  --White: hsl(0, 0%, 100%);
+  --Grey-500-medium: hsl(186, 15%, 59%);
+  --Grey-900-darker: hsl(187, 24%, 22%);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--Green-200-lighter);
+  font-family: "Karla", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: var(--White);
+  max-width: 50rem;
+  margin: 0 auto;
+  padding: 2.5rem 3rem;
+  border-radius: 1.2rem;
+}
+
+.header {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--Grey-900-darker);
+  margin-bottom: 2rem;
+}
+
+span {
+  color: var(--Green-600-medium);
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+label {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--Grey-900-darker);
+  margin-bottom: 1rem;
+}
+
+.label-checkbox {
+  margin-bottom: 0;
+  cursor: pointer;
+}
+
+.input {
+  padding: 1rem;
+  border: 1px solid var(--Grey-500-medium);
+  border-radius: 0.5rem;
+  color: var(--Grey-900-darker);
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.input:focus,
+.input:active {
+  outline: none;
+  border: 1px solid var(--Green-600-medium);
+  color: var(--Grey-900-darker);
+  font-weight: 400;
+}
+
+.names {
+  display: flex;
+  gap: 2rem;
+  /* margin-bottom: 2rem; */
+}
+
+.email {
+  margin-bottom: 2rem;
+}
+
+.queries {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.type {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  width: 50%;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.message-input {
+  padding: 3rem;
+}
+
+.checkbox-address {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.field-error-message {
+  color: var(--Red);
+  font-size: 1.1rem;
+  margin-top: 1rem;
+}
+
+.error-msg {
+  display: none;
+}
+
+input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+  appearance: none; /* Removes default styling */
+  background-color: var(--White); /* Default background */
+  border: 2px solid var(--Grey-500-medium);
+  position: relative;
+
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+  background-color: var(--Green-600-medium);
+  border-color: var(--Green-600-medium);
+  color: var(--Red);
+}
+
+input[type="checkbox"]:checked::after {
+  content: "✔";
+  font-size: 1.2rem;
+  color: white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 400;
+}
+
+input[type="radio"] {
+  width: 15px;
+  height: 15px;
+  appearance: none;
+  background-color: var(--White);
+  border: 1px solid var(--Grey-500-medium);
+  border-radius: 50%;
+  position: relative;
+
+  cursor: pointer;
+}
+
+input[type="radio"]:checked {
+  background-color: var(--Green-200-lighter);
+  border-color: var(--Green-600-medium);
+  color: var(--Grey-900-darker);
+  font-weight: 400;
+}
+
+input[type="radio"]:checked::after {
+  content: "🔘";
+
+  font-size: 1.3rem;
+  color: var(--Green-600-medium);
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  font-weight: 400;
+}
+
+.terms {
+  margin-bottom: 0;
+}
+
+.btn {
+  font-family: inherit;
+  background-color: var(--Green-600-medium);
+  width: 100%;
+  border: none;
+  color: var(--White);
+  padding: 1.2rem;
+  margin-top: 2.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--Green-600-darker);
+}
+
+/* // 500px */
+@media (max-width: 31.25em) {
+  html {
+    font-size: 55%;
+  }
+
+  .container {
+    max-width: 45rem;
+  }
+
+  #fname {
+    width: 100%;
+  }
+
+  #lname {
+    width: 100%;
+  }
+}
+
+/* // 430px */
+@media (max-width: 26.875em) {
+  html {
+    font-size: 53%;
+  }
+
+  .container {
+    max-width: 45rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
+  .names {
+    flex-direction: column;
+  }
+
+  .queries {
+    flex-direction: column;
+  }
+
+  .type {
+    width: 100%;
+  }
+}
+
+/* // 300px */
+@media (max-width: 18.75em) {
+  html {
+    font-size: 48%;
+  }
+}
