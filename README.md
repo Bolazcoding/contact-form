@@ -36,8 +36,8 @@ This is a solution to the [Contact form challenge on Frontend Mentor](https://ww
 
 ### Links
 
-- Solution URL: [Solution URL](https://github.com/Bolazcoding/faq-accordion)
-- Live Site URL: [Live site URL](https://faq-accordion-rho-rust.vercel.app/)
+- Solution URL: [Solution URL](https://github.com/Bolazcoding/contact-form)
+- Live Site URL: [Live site URL](https://contact-form-kappa-blond.vercel.app/)
 
 ## My process
 

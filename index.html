@@ -97,14 +97,23 @@
 
           <div class="address">
             <label for="message">Message <span>*</span></label>
-            <input
+            <!-- <input
               type="text"
               class="input message-input input-field"
               id="message"
               name="name"
               autocomplete="name"
+              maxlength="50"
               required
-            />
+            /> -->
+            <textarea
+              class="input message-input input-field"
+              id="message"
+              name="message"
+              rows="4"
+              cols="20"
+            >
+            </textarea>
             <p class="field-error-message error-msg"></p>
           </div>
 
@@ -127,6 +136,7 @@
         </form>
       </div>
     </main>
+
     <!-- success message -->
     <div class="success-container">
       <div class="success-state">
