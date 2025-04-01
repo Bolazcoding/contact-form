@@ -63,7 +63,7 @@ function formValidation() {
     if (input.value.trim() === "") {
       input.style.borderColor = "hsl(0, 66%, 54%)";
       input.style.color = "hsl(187, 24%, 22%)";
-      error_message[i].style.display = "block";
+      error_message[i].textContent = "This field is required";
       return;
     } else {
       input.style.borderColor = "hsl(186, 15%, 59%)";
