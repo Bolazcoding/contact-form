@@ -16,7 +16,6 @@ const contact_form = document.querySelector("#contact-form");
 
 const submitBtn = document.querySelector(".btn");
 
-// Global Variables
 let fName, lName, comment, emailValue, queryValue, termValue;
 
 // Checks if a query type is selected
